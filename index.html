@@ -6,94 +6,399 @@
     <title>Jorge Maldonado | Backend Developer</title>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
+  <body
+    class="bg-slate-950 text-white selection:bg-cyan-400 selection:text-slate-950"
+  >
+    <!-- Background Glow -->
+    <div class="fixed inset-0 -z-10 overflow-hidden">
+      <div
+        class="absolute top-[-120px] left-[-120px] h-80 w-80 rounded-full bg-cyan-500/20 blur-3xl"
+      ></div>
+      <div
+        class="absolute top-[20%] right-[-120px] h-96 w-96 rounded-full bg-indigo-500/20 blur-3xl"
+      ></div>
+      <div
+        class="absolute bottom-[-120px] left-[30%] h-80 w-80 rounded-full bg-sky-400/10 blur-3xl"
+      ></div>
+      <div
+        class="absolute inset-0 bg-gradient-to-b from-slate-950 via-slate-900 to-black"
+      ></div>
+    </div>
 
-  <body class="bg-black text-white font-sans">
-    <!-- HERO -->
-    <section
-      class="h-screen flex flex-col justify-center items-center text-center px-6"
+    <!-- Navbar -->
+    <header
+      class="sticky top-0 z-50 backdrop-blur-md bg-slate-950/50 border-b border-white/10"
     >
-      <h1 class="text-5xl font-bold mb-4">Jorge Maldonado</h1>
-      <p class="text-xl text-gray-400 mb-6">
-        Backend Developer | FastAPI | Microservices
-      </p>
-      <p class="max-w-xl text-gray-500">
-        I build scalable backend systems with real-world architecture: caching,
-        distributed systems, authentication, and event-driven design.
-      </p>
-
-      <a
-        href="#projects"
-        class="mt-8 px-6 py-3 bg-white text-black rounded-xl font-semibold hover:bg-gray-300"
+      <div
+        class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between"
       >
-        View Projects
-      </a>
-    </section>
+        <h1 class="text-lg md:text-xl font-bold tracking-wide">
+          Jorge Maldonado
+        </h1>
+        <nav class="hidden md:flex gap-6 text-sm text-slate-300">
+          <a href="#about" class="hover:text-cyan-300 transition">About</a>
+          <a href="#projects" class="hover:text-cyan-300 transition"
+            >Projects</a
+          >
+          <a href="#stack" class="hover:text-cyan-300 transition">Stack</a>
+          <a href="#contact" class="hover:text-cyan-300 transition">Contact</a>
+        </nav>
+      </div>
+    </header>
 
-    <!-- ABOUT -->
-    <section class="py-20 px-6 max-w-4xl mx-auto">
-      <h2 class="text-3xl font-bold mb-6">About Me</h2>
-      <p class="text-gray-400 leading-relaxed">
-        Backend developer with hands-on experience building production-style
-        APIs using FastAPI, Redis, Kafka, and Docker. Focused on writing clean,
-        scalable, and maintainable systems.
-      </p>
-    </section>
-
-    <!-- PROJECTS -->
-    <section id="projects" class="py-20 px-6 bg-gray-900">
-      <h2 class="text-3xl font-bold mb-10 text-center">Projects</h2>
-
-      <div class="grid md:grid-cols-3 gap-6">
-        <div class="bg-black p-6 rounded-xl border border-gray-700">
-          <h3 class="text-xl font-semibold mb-2">API-JMV</h3>
-          <p class="text-gray-400 mb-4">
-            Full backend system with authentication, caching, Kafka, and
-            Kubernetes.
+    <!-- Hero -->
+    <section class="min-h-screen flex items-center">
+      <div
+        class="max-w-6xl mx-auto px-6 py-20 grid lg:grid-cols-2 gap-14 items-center"
+      >
+        <div>
+          <p
+            class="inline-flex items-center gap-2 text-sm text-cyan-300 bg-cyan-400/10 border border-cyan-400/20 rounded-full px-4 py-2 mb-6"
+          >
+            Backend Developer Portfolio
           </p>
-          <a href="#" class="text-white underline">GitHub</a>
+
+          <h2 class="text-4xl md:text-6xl font-extrabold leading-tight">
+            I build
+            <span
+              class="bg-gradient-to-r from-cyan-300 via-sky-400 to-indigo-400 bg-clip-text text-transparent"
+            >
+              production-ready
+            </span>
+            backend systems.
+          </h2>
+
+          <p class="mt-6 text-lg text-slate-300 max-w-2xl leading-relaxed">
+            Backend developer focused on scalable APIs, distributed systems,
+            authentication, caching, event-driven architecture, and clean
+            software design with FastAPI, Redis, Kafka, Docker, and Kubernetes.
+          </p>
+
+          <div class="mt-8 flex flex-wrap gap-4">
+            <a
+              href="#projects"
+              class="px-6 py-3 rounded-xl bg-cyan-400 text-slate-950 font-semibold hover:scale-105 transition"
+            >
+              View Projects
+            </a>
+            <a
+              href="https://github.com/jorgemave27"
+              target="_blank"
+              class="px-6 py-3 rounded-xl border border-white/15 bg-white/5 text-white font-semibold hover:bg-white/10 transition"
+            >
+              GitHub Profile
+            </a>
+          </div>
+
+          <div class="mt-10 flex flex-wrap gap-3 text-sm text-slate-300">
+            <span
+              class="px-3 py-1 rounded-full bg-white/5 border border-white/10"
+              >FastAPI</span
+            >
+            <span
+              class="px-3 py-1 rounded-full bg-white/5 border border-white/10"
+              >Redis</span
+            >
+            <span
+              class="px-3 py-1 rounded-full bg-white/5 border border-white/10"
+              >Kafka</span
+            >
+            <span
+              class="px-3 py-1 rounded-full bg-white/5 border border-white/10"
+              >Docker</span
+            >
+            <span
+              class="px-3 py-1 rounded-full bg-white/5 border border-white/10"
+              >Kubernetes</span
+            >
+          </div>
         </div>
 
-        <div class="bg-black p-6 rounded-xl border border-gray-700">
-          <h3 class="text-xl font-semibold mb-2">Auth Service</h3>
-          <p class="text-gray-400 mb-4">
-            JWT authentication system with refresh tokens and middleware
-            protection.
-          </p>
-          <a href="#" class="text-white underline">GitHub</a>
-        </div>
+        <div class="relative">
+          <div
+            class="rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl shadow-2xl p-8"
+          >
+            <div class="flex items-center justify-between mb-6">
+              <span class="text-slate-300 text-sm">System Snapshot</span>
+              <span class="text-emerald-400 text-sm">● Online</span>
+            </div>
 
-        <div class="bg-black p-6 rounded-xl border border-gray-700">
-          <h3 class="text-xl font-semibold mb-2">Cache System</h3>
-          <p class="text-gray-400 mb-4">
-            Multi-level cache system (memory + Redis) with TTL and decorators.
-          </p>
-          <a href="#" class="text-white underline">GitHub</a>
+            <div class="space-y-4">
+              <div
+                class="rounded-2xl bg-slate-900/80 border border-white/10 p-4"
+              >
+                <p class="text-sm text-slate-400">Main Project</p>
+                <h3 class="text-xl font-bold mt-1">API-JMV</h3>
+                <p class="text-slate-300 mt-2 text-sm leading-relaxed">
+                  Enterprise-style FastAPI platform with auth flows, caching,
+                  CQRS, observability, Kafka integrations, Docker, Kubernetes,
+                  and advanced backend patterns.
+                </p>
+              </div>
+
+              <div class="grid grid-cols-2 gap-4">
+                <div
+                  class="rounded-2xl bg-slate-900/80 border border-white/10 p-4"
+                >
+                  <p class="text-slate-400 text-sm">Architecture</p>
+                  <p class="text-lg font-semibold mt-1">Microservices</p>
+                </div>
+                <div
+                  class="rounded-2xl bg-slate-900/80 border border-white/10 p-4"
+                >
+                  <p class="text-slate-400 text-sm">Focus</p>
+                  <p class="text-lg font-semibold mt-1">Scalability</p>
+                </div>
+                <div
+                  class="rounded-2xl bg-slate-900/80 border border-white/10 p-4"
+                >
+                  <p class="text-slate-400 text-sm">Patterns</p>
+                  <p class="text-lg font-semibold mt-1">CQRS / Events</p>
+                </div>
+                <div
+                  class="rounded-2xl bg-slate-900/80 border border-white/10 p-4"
+                >
+                  <p class="text-slate-400 text-sm">Infra</p>
+                  <p class="text-lg font-semibold mt-1">Docker / K8s</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- SKILLS -->
-    <section class="py-20 px-6 max-w-4xl mx-auto">
-      <h2 class="text-3xl font-bold mb-6">Tech Stack</h2>
-
-      <div class="flex flex-wrap gap-4 text-sm text-gray-300">
-        <span class="bg-gray-800 px-4 py-2 rounded">Python</span>
-        <span class="bg-gray-800 px-4 py-2 rounded">FastAPI</span>
-        <span class="bg-gray-800 px-4 py-2 rounded">PostgreSQL</span>
-        <span class="bg-gray-800 px-4 py-2 rounded">Redis</span>
-        <span class="bg-gray-800 px-4 py-2 rounded">Kafka</span>
-        <span class="bg-gray-800 px-4 py-2 rounded">Docker</span>
-        <span class="bg-gray-800 px-4 py-2 rounded">Kubernetes</span>
+    <!-- About -->
+    <section id="about" class="py-24">
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="max-w-3xl">
+          <p class="text-cyan-300 font-medium mb-3">About Me</p>
+          <h3 class="text-3xl md:text-4xl font-bold mb-6">
+            Backend development with a real-world mindset.
+          </h3>
+          <p class="text-slate-300 leading-8 text-lg">
+            I focus on building backend systems that go beyond CRUD: secure
+            authentication, resilient architectures, multi-level caching, async
+            flows, integrations, observability, and production-oriented
+            deployments. My goal is to design software that is clean,
+            maintainable, and ready to scale.
+          </p>
+        </div>
       </div>
     </section>
 
-    <!-- CONTACT -->
-    <section class="py-20 px-6 bg-gray-900 text-center">
-      <h2 class="text-3xl font-bold mb-6">Contact</h2>
+    <!-- Projects -->
+    <section id="projects" class="py-24">
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="flex items-end justify-between mb-10">
+          <div>
+            <p class="text-cyan-300 font-medium mb-2">Selected Work</p>
+            <h3 class="text-3xl md:text-4xl font-bold">Projects</h3>
+          </div>
+        </div>
 
-      <p class="text-gray-400 mb-4">Let’s work together</p>
+        <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-6">
+          <article
+            class="group rounded-3xl border border-white/10 bg-white/5 p-7 hover:-translate-y-2 hover:border-cyan-400/30 hover:shadow-2xl transition duration-300"
+          >
+            <div class="flex items-center justify-between mb-5">
+              <span class="text-xs uppercase tracking-[0.2em] text-cyan-300"
+                >Flagship</span
+              >
+              <span class="text-slate-400 text-sm">01</span>
+            </div>
+            <h4 class="text-2xl font-bold mb-3">API-JMV</h4>
+            <p class="text-slate-300 leading-7 mb-6">
+              Advanced FastAPI backend with JWT, OAuth2, Redis sessions, Kafka
+              events, CQRS, S3 integrations, observability, Docker, Kubernetes,
+              and security hardening.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-6">
+              <span
+                class="px-3 py-1 text-xs rounded-full bg-cyan-400/10 border border-cyan-400/20 text-cyan-200"
+                >FastAPI</span
+              >
+              <span
+                class="px-3 py-1 text-xs rounded-full bg-white/5 border border-white/10 text-slate-300"
+                >Kafka</span
+              >
+              <span
+                class="px-3 py-1 text-xs rounded-full bg-white/5 border border-white/10 text-slate-300"
+                >Redis</span
+              >
+              <span
+                class="px-3 py-1 text-xs rounded-full bg-white/5 border border-white/10 text-slate-300"
+                >Kubernetes</span
+              >
+            </div>
+            <a
+              href="https://github.com/jorgemave27/API-JMV"
+              target="_blank"
+              class="inline-flex items-center gap-2 text-cyan-300 font-semibold hover:text-cyan-200"
+            >
+              View on GitHub →
+            </a>
+          </article>
 
-      <a href="mailto:tuemail@gmail.com" class="underline">Email Me</a>
+          <article
+            class="group rounded-3xl border border-white/10 bg-white/5 p-7 hover:-translate-y-2 hover:border-cyan-400/30 hover:shadow-2xl transition duration-300"
+          >
+            <div class="flex items-center justify-between mb-5">
+              <span class="text-xs uppercase tracking-[0.2em] text-cyan-300"
+                >Security</span
+              >
+              <span class="text-slate-400 text-sm">02</span>
+            </div>
+            <h4 class="text-2xl font-bold mb-3">Auth Service</h4>
+            <p class="text-slate-300 leading-7 mb-6">
+              Authentication-focused backend service with token verification,
+              endpoint protection, middleware integration, and reusable auth
+              patterns for scalable systems.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-6">
+              <span
+                class="px-3 py-1 text-xs rounded-full bg-cyan-400/10 border border-cyan-400/20 text-cyan-200"
+                >JWT</span
+              >
+              <span
+                class="px-3 py-1 text-xs rounded-full bg-white/5 border border-white/10 text-slate-300"
+                >Middleware</span
+              >
+              <span
+                class="px-3 py-1 text-xs rounded-full bg-white/5 border border-white/10 text-slate-300"
+                >Security</span
+              >
+            </div>
+            <a
+              href="https://github.com/jorgemave27"
+              target="_blank"
+              class="inline-flex items-center gap-2 text-cyan-300 font-semibold hover:text-cyan-200"
+            >
+              View on GitHub →
+            </a>
+          </article>
+
+          <article
+            class="group rounded-3xl border border-white/10 bg-white/5 p-7 hover:-translate-y-2 hover:border-cyan-400/30 hover:shadow-2xl transition duration-300"
+          >
+            <div class="flex items-center justify-between mb-5">
+              <span class="text-xs uppercase tracking-[0.2em] text-cyan-300"
+                >Performance</span
+              >
+              <span class="text-slate-400 text-sm">03</span>
+            </div>
+            <h4 class="text-2xl font-bold mb-3">Cache System</h4>
+            <p class="text-slate-300 leading-7 mb-6">
+              Multi-level caching approach using in-memory and Redis strategies,
+              TTL handling, decorators, and patterns designed for fast and
+              efficient backend APIs.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-6">
+              <span
+                class="px-3 py-1 text-xs rounded-full bg-cyan-400/10 border border-cyan-400/20 text-cyan-200"
+                >Caching</span
+              >
+              <span
+                class="px-3 py-1 text-xs rounded-full bg-white/5 border border-white/10 text-slate-300"
+                >Redis</span
+              >
+              <span
+                class="px-3 py-1 text-xs rounded-full bg-white/5 border border-white/10 text-slate-300"
+                >TTL</span
+              >
+            </div>
+            <a
+              href="https://github.com/jorgemave27"
+              target="_blank"
+              class="inline-flex items-center gap-2 text-cyan-300 font-semibold hover:text-cyan-200"
+            >
+              View on GitHub →
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stack -->
+    <section id="stack" class="py-24">
+      <div class="max-w-6xl mx-auto px-6">
+        <p class="text-cyan-300 font-medium mb-2">Core Tools</p>
+        <h3 class="text-3xl md:text-4xl font-bold mb-10">Tech Stack</h3>
+
+        <div class="flex flex-wrap gap-4">
+          <span
+            class="px-5 py-3 rounded-2xl bg-white/5 border border-white/10 text-slate-200 hover:bg-white/10 transition"
+            >Python</span
+          >
+          <span
+            class="px-5 py-3 rounded-2xl bg-white/5 border border-white/10 text-slate-200 hover:bg-white/10 transition"
+            >FastAPI</span
+          >
+          <span
+            class="px-5 py-3 rounded-2xl bg-white/5 border border-white/10 text-slate-200 hover:bg-white/10 transition"
+            >PostgreSQL</span
+          >
+          <span
+            class="px-5 py-3 rounded-2xl bg-white/5 border border-white/10 text-slate-200 hover:bg-white/10 transition"
+            >Redis</span
+          >
+          <span
+            class="px-5 py-3 rounded-2xl bg-white/5 border border-white/10 text-slate-200 hover:bg-white/10 transition"
+            >Kafka</span
+          >
+          <span
+            class="px-5 py-3 rounded-2xl bg-white/5 border border-white/10 text-slate-200 hover:bg-white/10 transition"
+            >Docker</span
+          >
+          <span
+            class="px-5 py-3 rounded-2xl bg-white/5 border border-white/10 text-slate-200 hover:bg-white/10 transition"
+            >Kubernetes</span
+          >
+          <span
+            class="px-5 py-3 rounded-2xl bg-white/5 border border-white/10 text-slate-200 hover:bg-white/10 transition"
+            >SQLAlchemy</span
+          >
+          <span
+            class="px-5 py-3 rounded-2xl bg-white/5 border border-white/10 text-slate-200 hover:bg-white/10 transition"
+            >JWT / OAuth2</span
+          >
+          <span
+            class="px-5 py-3 rounded-2xl bg-white/5 border border-white/10 text-slate-200 hover:bg-white/10 transition"
+            >GitHub Actions</span
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-24">
+      <div class="max-w-4xl mx-auto px-6 text-center">
+        <div class="rounded-3xl border border-white/10 bg-white/5 p-10 md:p-14">
+          <p class="text-cyan-300 font-medium mb-3">Contact</p>
+          <h3 class="text-3xl md:text-5xl font-bold mb-5">
+            Let’s build something solid.
+          </h3>
+          <p class="text-slate-300 text-lg leading-8 max-w-2xl mx-auto mb-8">
+            Open to backend opportunities, freelance work, and projects where
+            clean architecture, performance, and scalability actually matter.
+          </p>
+          <div class="flex flex-wrap justify-center gap-4">
+            <a
+              href="mailto:tuemail@gmail.com"
+              class="px-6 py-3 rounded-xl bg-cyan-400 text-slate-950 font-semibold hover:scale-105 transition"
+            >
+              Email Me
+            </a>
+            <a
+              href="https://github.com/jorgemave27"
+              target="_blank"
+              class="px-6 py-3 rounded-xl border border-white/15 bg-white/5 text-white font-semibold hover:bg-white/10 transition"
+            >
+              GitHub
+            </a>
+          </div>
+        </div>
+      </div>
     </section>
   </body>
 </html>
